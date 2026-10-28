@@ -1,0 +1,58 @@
+{
+  "name": "yunshu-cloudhub-saas",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "云枢 CloudHub · 多租户企业一体化管理平台前端演示（CRM 客户关系 / OA 协同办公 / 财务中心 / 平台配置），Vue3 + TypeScript + Vite + Ant Design Vue，零后端依赖",
+  "license": "MIT",
+  "author": "fenglaoban173",
+  "homepage": "https://github.com/fenglaoban173/yunshu-cloudhub-saas#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenglaoban173/yunshu-cloudhub-saas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fenglaoban173/yunshu-cloudhub-saas/issues"
+  },
+  "keywords": [
+    "vue3",
+    "typescript",
+    "vite",
+    "ant-design-vue",
+    "saas",
+    "admin-template",
+    "crm",
+    "oa",
+    "erp",
+    "dashboard",
+    "enterprise"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "vue-tsc --noEmit",
+    "verify:static": "npx tsx scripts/verify/static/sort-static.ts && npx tsx scripts/verify/static/rowkey-audit.ts && npx tsx scripts/verify/static/rule-count.ts"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@vue/compiler-sfc": "3.5.44",
+    "ant-design-vue": "^4.2.6",
+    "dayjs": "^1.11.13",
+    "echarts": "^5.5.1",
+    "pinia": "^2.2.6",
+    "vue": "3.5.44",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.6.3",
+    "tsx": "^4.19.2",
+    "vite": "^6.0.3",
+    "vue-tsc": "^2.1.10"
+  }
+}

@@ -1,0 +1,244 @@
+/**
+ * Ant Design Vue 4 组件层微调
+ *
+ * AntD Vue 4 取消了 Table / Card / Button / Tag 等组件的组件级 token，
+ * 这些细节只能通过 CSS 覆盖补齐。目标：细边框、紧凑表格、低饱和底色。
+ */
+
+/* ---------------- Table ---------------- */
+.ant-table {
+  font-size: 13.5px;
+}
+.ant-table-thead > tr > th {
+  background: #f7f8fa !important;
+  color: #1a1d21;
+  font-weight: 500;
+  font-size: 13px;
+  border-bottom: 1px solid #edeff2 !important;
+  padding: 10px 14px;
+}
+.ant-table-tbody > tr > td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #f0f1f3;
+}
+.ant-table-tbody > tr:hover > td {
+  background: #f7f9fc !important;
+}
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background: #e8f3ff !important;
+}
+.ant-table-cell-fix-left,
+.ant-table-cell-fix-right {
+  background: inherit;
+}
+.ant-table-column-sorter {
+  color: #c9cdd4;
+}
+.ant-table-thead > tr > th.ant-table-column-sort:hover .ant-table-column-sorter {
+  color: #165dff;
+}
+.ant-table-cell-row-hover {
+  background: #f7f9fc !important;
+}
+.ant-table-placeholder .ant-table-cell {
+  background: #fff;
+}
+
+/* 紧凑模式 */
+.ant-table-small .ant-table-thead > tr > th,
+.ant-table-small .ant-table-tbody > tr > td {
+  padding: 6px 10px;
+}
+.ant-table-middle .ant-table-thead > tr > th,
+.ant-table-middle .ant-table-tbody > tr > td {
+  padding: 10px 14px;
+}
+
+/* 全局表格密度：由「偏好设置」写到 <html data-density> */
+[data-density='compact'] .ant-table-thead > tr > th {
+  padding: 8px 14px;
+}
+[data-density='compact'] .ant-table-tbody > tr > td {
+  padding: 6px 14px;
+}
+[data-density='relaxed'] .ant-table-thead > tr > th {
+  padding: 14px;
+}
+[data-density='relaxed'] .ant-table-tbody > tr > td {
+  padding: 17px 14px;
+}
+
+/* ---------------- Card ---------------- */
+.ant-card {
+  border-color: #e8eaed;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(29, 35, 41, 0.03);
+}
+.ant-card-head {
+  border-bottom-color: #f0f1f3;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 52px;
+  padding: 0 20px;
+}
+.ant-card-head-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1d21;
+}
+.ant-card-body {
+  padding: 20px;
+}
+
+/* ---------------- Button ---------------- */
+.ant-btn {
+  font-weight: 400;
+  box-shadow: none;
+}
+.ant-btn-primary {
+  box-shadow: none;
+}
+.ant-btn-default {
+  border-color: #d9dde3;
+}
+.ant-btn-text {
+  box-shadow: none;
+}
+.ant-btn-lg {
+  font-size: 15px;
+}
+
+/* ---------------- Input / Select / DatePicker ---------------- */
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-picker,
+.ant-select-selector {
+  border-radius: 6px !important;
+}
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper-focused,
+.ant-input-affix-wrapper:focus {
+  box-shadow: 0 0 0 3px rgba(22, 93, 255, 0.1) !important;
+  border-color: #6aa1ff !important;
+}
+.ant-select-dropdown .ant-select-item-option-selected {
+  background: #e8f3ff !important;
+  color: #165dff !important;
+  font-weight: 500;
+}
+.ant-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background: #f7f9fc;
+}
+
+/* ---------------- Tag ---------------- */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0 7px;
+  line-height: 20px;
+}
+
+/* ---------------- Tabs ---------------- */
+.ant-tabs-tab {
+  font-size: 14px;
+  color: #4e5969;
+}
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #165dff;
+  font-weight: 500;
+}
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom-color: #e8eaed;
+}
+
+/* ---------------- Descriptions ---------------- */
+.ant-descriptions-item-label {
+  background: #f7f8fa !important;
+  color: #4e5969 !important;
+  font-weight: 400 !important;
+}
+.ant-descriptions-item-content {
+  color: #1a1d21;
+}
+
+/* ---------------- Statistic ---------------- */
+.ant-statistic-title {
+  font-size: 13px;
+  color: #86909c;
+  margin-bottom: 4px;
+}
+.ant-statistic-content {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1d21;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------- Progress ---------------- */
+.ant-progress-inner {
+  background: #e8eaed;
+}
+
+/* ---------------- Segmented ---------------- */
+.ant-segmented {
+  background: #f2f3f5;
+  border-radius: 6px;
+}
+.ant-segmented-item-selected {
+  box-shadow: 0 1px 2px rgba(29, 35, 41, 0.06);
+}
+
+/* ---------------- Modal / Drawer ---------------- */
+.ant-modal-content,
+.ant-drawer-content {
+  border-radius: 8px;
+}
+.ant-modal-header {
+  border-bottom: 1px solid #f0f1f3;
+}
+
+/* ---------------- Timeline ---------------- */
+.ant-timeline-item-content {
+  color: #1a1d21;
+}
+
+/* ---------------- Menu（深色侧边栏） ---------------- */
+.ant-menu-dark.ant-menu-inline .ant-menu-sub {
+  background: transparent !important;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+  background: #165dff !important;
+}
+/*
+  AntD Vue 4 的深色菜单没有单独定义 hover 背景，会继承浅色主题的
+  colorItemBgHover（= colorBgTextHover，近白），导致 hover 时白字压在白底上。
+  这里改成深底上的半透明白色蒙层。
+*/
+.ant-menu-dark .ant-menu-item:not(.ant-menu-item-selected):hover,
+.ant-menu-dark .ant-menu-submenu-title:not(.ant-menu-submenu-selected):hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-submenu-title {
+  color: rgba(255, 255, 255, 0.72);
+}
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  color: #fff;
+}
+.ant-menu-inline .ant-menu-item,
+.ant-menu-inline .ant-menu-submenu-title {
+  height: 38px;
+  line-height: 38px;
+}
+.ant-menu-inline .ant-menu-item-group-title {
+  font-size: 11px;
+  letter-spacing: 0.4px;
+}
+
+/* ---------------- Popover / Dropdown ---------------- */
+.ant-popover .ant-popover-inner,
+.ant-dropdown .ant-dropdown-menu {
+  box-shadow: 0 4px 16px rgba(29, 35, 41, 0.08);
+}
