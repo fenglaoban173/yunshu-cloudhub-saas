@@ -11,6 +11,8 @@
 [![Vite](https://img.shields.io/badge/Vite-6-646cff.svg)](https://vite.dev)
 [![Ant Design Vue](https://img.shields.io/badge/Ant%20Design%20Vue-4.2-1677ff.svg)](https://www.antdv.com)
 
+**在线演示**：<https://fenglaoban173.github.io/yunshu-cloudhub-saas/>（GitHub Actions 自动构建发布，每次推 `main` 都会更新）
+
 ---
 
 ## English Summary
@@ -41,6 +43,9 @@ npm install
 npm run dev      # http://127.0.0.1:5273
 npm run build    # type check + production build
 ```
+
+**Live demo:** <https://fenglaoban173.github.io/yunshu-cloudhub-saas/> — built and published
+by GitHub Actions on every push to `main`.
 
 **License:** MIT — see [LICENSE](LICENSE). Contributions welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
